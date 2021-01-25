@@ -1,0 +1,61 @@
+
+#Options -Indexes
+#DirectoryIndex views/inicio/inicio.php
+
+#<Directory /museo/core/controllers>
+# AllowOverride Limit
+#</Directory>
+
+
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteBase /museo/
+RewriteCond %{SCRIPT_FILENAME} !-d
+RewriteCond %{SCRIPT_FILENAME} !-f
+#RewriteRule ^(.*)$ views/inicio/$1 [L]
+#RewriteRule ^(.*)$ $1.php [L]
+RewriteRule ^(login)$ views/$1.php [L]
+RewriteRule ^(logout)$ views/$1.php [L]
+RewriteRule ^(inicio)$ views/inicio/$1.php [L]
+
+RewriteRule ^(publicaciones)$ views/inicio/$1.php [L]
+RewriteRule ^(registrar_publicacion)$ views/inicio/$1.php [L]
+RewriteRule ^(detalles_publicacion)$ views/inicio/$1.php [L]
+
+RewriteRule ^(actualidad)$ views/inicio/$1.php [L]
+RewriteRule ^(actualizar_noticia)$ views/inicio/$1.php [L]
+
+RewriteRule ^(visita)$ views/inicio/$1.php [L]
+RewriteRule ^(registrar_visita)$ views/inicio/$1.php [L]
+
+RewriteRule ^(aprende)$ views/inicio/$1.php [L]
+RewriteRule ^(lista_juegos)$ views/inicio/$1.php [L]
+RewriteRule ^(lista_juego_vf)$ views/inicio/$1.php [L]
+RewriteRule ^(juego_verdadero_falso)$ views/inicio/$1.php [L]
+RewriteRule ^(juego_ahorcado)$ views/inicio/$1.php [L]
+RewriteRule ^(juego_arrastrar)$ views/inicio/$1.php [L]
+RewriteRule ^(registrar_juego_vf)$ views/inicio/$1.php [L]
+RewriteRule ^(registrar_juego_ahorcado)$ views/inicio/$1.php [L]
+RewriteRule ^(registrar_juego_arrastrar)$ views/inicio/$1.php [L]
+RewriteRule ^(administrar_juego_vf)$ views/inicio/$1.php [L]
+RewriteRule ^(administrar_juego_ahorcado)$ views/inicio/$1.php [L]
+RewriteRule ^(administrar_juego_arrastrar)$ views/inicio/$1.php [L]
+RewriteRule ^(editar_juego_ahorcado)$ views/inicio/$1.php [L]
+RewriteRule ^(editar_juego_arrastrar)$ views/inicio/$1.php [L]
+
+RewriteRule ^(museo)$ views/inicio/$1.php [L]
+RewriteRule ^(registrar_pieza)$ views/inicio/$1.php [L]
+RewriteRule ^(detalles_pieza*)$ views/inicio/$1.php [L]
+RewriteRule ^(editar_pieza)$ views/inicio/$1.php [L]
+RewriteRule ^(lista_piezas)$ views/inicio/$1.php [L]
+
+RewriteRule ^(registrar_usuario)$ views/inicio/$1.php [L]
+RewriteRule ^(ver_perfil)$ views/inicio/$1.php [L]
+RewriteRule ^(email_active)$ views/inicio/$1.php [L]
+RewriteRule ^(recuperar_password)$ views/inicio/recuperar_pass.php [L]
+RewriteRule ^(nuevo_password)$ views/inicio/nuevo_pass.php [L]
+
+RewriteRule ^(inicio/success)$ views/$1.php [L]
+#RewriteRule ^(lista_piezas?.*)$ views/inicio/$1.php [L]
+
+</IfModule>

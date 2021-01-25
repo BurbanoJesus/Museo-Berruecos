@@ -1,0 +1,88 @@
+/*@charset "utf-8";*/
+
+div#juego_ahorcado{
+	display: flex;
+	flex-direction: column;
+	align-content: center;
+}
+
+	span.descripcion_juego_ahorcado{
+		padding: 20px;
+		font-size: 30px;
+		width: 70%;
+		text-align: center;
+		color: var(--azul);
+		margin-bottom: 18px;
+	}
+
+	div#juego_ahorcado div.img{
+		display: inline-flex;
+		justify-content: center;
+		/*margin-bottom: 12px;*/
+	    margin-bottom: 10px;
+	}
+
+		div#juego_ahorcado img{
+			width: 260px;
+		}
+
+	div#juego_ahorcado .contenedorPalabra{
+		display: inline-flex;
+		flex-direction: column;
+		align-items: center;
+		background-color:white;
+		min-width:200px;
+	}
+
+	div#juego_ahorcado .palabraSecreta{
+		display: inline-flex;
+		justify-content: center;
+		height: 60px;
+		min-width: 200px;
+		margin-bottom: 12px;
+	}
+
+	div#juego_ahorcado .letra{
+		display: inline-flex;
+		justify-content: center;
+		height: 50px;
+		margin-left: 15px;
+		font-size: 42px;
+		font-weight: bold;
+	}
+
+	div#juego_ahorcado .div_intentos span{
+		display: inline-flex;
+	    font-size: 30px;
+	    font-family: 'halle';
+	    font-weight: bold;
+	    color: var(--cafe);
+	    /*position: absolute;
+	    right: 10px;
+	    top: 10px;*/
+	}
+
+	div#juego_ahorcado .contenedorLetras{
+		display: inline-flex;
+		justify-content: center;
+		flex-wrap: wrap;
+		width: 625px;
+		margin-bottom: 12px;
+	}
+
+	div#juego_ahorcado .botonLetra{
+		display: inline-flex;
+		justify-content: center;
+		align-items: center;
+		padding: 10px;
+		border: 5px solid #CCD4D9;
+		border-radius: 5px;
+		margin-left: 4px;
+		margin-bottom: 4px;
+		cursor: pointer;
+	}
+
+	.letra_disabled{
+		background: #E7E7E7;
+		color: #C4C4C4;
+	}

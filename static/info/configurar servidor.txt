@@ -1,0 +1,20 @@
+MODIFICACIONES SERVIDOR:
+
+archivo:/php.ini
+
+max_execution_time = ?
+max_input_time = -1
+post_max_size=2000M
+upload_max_filesize=1000M
+
+SESIONES:
+session.gc_maxlifetime=1440
+
+archivo:/.htaccess
+<IfModule mod_php5.c>
+    #Session timeout
+    php_value session.cookie_lifetime 1200
+    php_value session.gc_maxlifetime 1200
+</IfModule>
+
+

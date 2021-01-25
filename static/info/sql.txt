@@ -1,0 +1,5 @@
+INSERT INTO `MUNICIPIOS`(`id_municpio`, `municipio`) VALUES ('','arboleda');
+INSERT INTO `MUNICIPIOS`(`id_municpio`, `municipio`) VALUES ('','tumaco');
+INSERT INTO `MUNICIPIOS`(`id_municpio`, `municipio`) VALUES ('','la tola');
+INSERT INTO `MUNICIPIOS`(`id_municpio`, `municipio`) VALUES ('','san bernardo');
+INSERT INTO `MUNICIPIOS`(`id_municpio`, `municipio`) VALUES ('','san pablo');

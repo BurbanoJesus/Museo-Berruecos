@@ -1,0 +1,112 @@
+/*----------------------*/
+/*---JUEGOS ARRASTRAR----*/
+/*----------------------*/
+#h2_respuestas{
+    color: var(--azul);
+    margin-bottom: 5px;
+    padding: 0 5px;
+}
+
+div#juego_arrastrar div.tarjetas_juego_arrastrar{
+    display: flex;
+    flex-wrap: wrap;
+    padding-right: 23px;
+    padding-top: 23px;
+}
+
+div#juego_arrastrar div.elemento{
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    background: #0AA6B8;
+    width: 270px;
+    height: 380px;
+    border: 2px solid grey;
+    border-radius: 5px;
+    padding-top: 15px;
+    margin-left: 23px;
+    margin-bottom: 23px;
+    /*overflow: auto;*/
+}
+
+div#juego_arrastrar div.elemento div.j_espacios{
+    display: inline-flex;
+    background: #CAEFEF;
+    width: 244px;
+    height: 194px;
+    border: 2px dashed #002D70;
+    position: relative;
+}
+
+div#juego_arrastrar div.elemento span.enunciado{
+    display: inline-flex;
+    text-align: center;
+    padding: 5px 12px;
+    font-size: 23px;
+    color: var(--blanco);
+    max-height: 140px;
+    overflow: auto;
+}
+
+div.respuestas_juego_arrastrar{
+    display: flex;
+    flex-wrap: wrap;
+    padding-right: 23px;
+}
+
+div#juego_arrastrar div.respuesta{
+    display: inline-flex;
+    padding-left: 23px;
+    padding-bottom: 23px;
+}
+
+div#juego_arrastrar div.j_img{
+    display: inline-flex;
+    border: 2px dashed #002D70;
+    position: relative;
+    cursor: move;
+    width: 240px;
+    height: 190px;
+    background: url('/museo/static/img/default/fondo_salud2.jpg') center no-repeat;
+    background-size: 100% 100%;
+}
+
+div#juego_arrastrar div.j_img img{
+    width: 240px;
+    height: 190px;
+    object-fit: cover;
+}
+
+div#juego_arrastrar span.respuesta{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    background: #0AA6B8;
+    padding: 5px 35px;
+    color: var(--blanco);
+    font-size: 25px;
+    font-weight: bold;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 50px;
+}
+
+div.check_juego_arrastrar{
+    display: inline-flex;
+    align-items: center;
+    font-size: 25px;
+    color: #0BB213;
+    padding-bottom: 15px;
+}
+
+div.check_juego_arrastrar i{
+    font-size: 35px;
+    margin-right: 8px;
+}
+
+
+div.check_juego_arrastrar.mal{
+    color: #D50303;
+}
